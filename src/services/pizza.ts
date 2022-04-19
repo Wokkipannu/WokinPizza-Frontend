@@ -12,7 +12,7 @@ export default interface Pizza {
 }
 
 const API = axios.create({
-  baseURL: 'http://localhost:4000/api/',
+  baseURL: import.meta.env.VITE_API_PATH,
   headers: {
     'Content-Type': 'application/json'
   }
