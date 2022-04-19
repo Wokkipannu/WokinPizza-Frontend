@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.divider {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(140, 130, 115, 0.15);
+  border: solid rgba(0, 0, 0, .15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5em 1.5em inset, rgba(0, 0, 0, 0.15) 0px 0.125em 0.5em inset;
+  height: 3rem;
+}
