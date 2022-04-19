@@ -21,3 +21,7 @@ const API = axios.create({
 export const getPizzas = () => {
   return API.get('/pizza')
 }
+
+export const getDailyToppings = () => {
+  return API.get('/dailytoppings')
+}

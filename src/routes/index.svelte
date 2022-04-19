@@ -4,7 +4,7 @@
 
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { getPizzas } from "../services/pizza"
+	import { getPizzas, getDailyToppings } from "../services/pizza"
 	// No idea what this error means so I will just ignore it :)
 	// @ts-ignore
 	import type { Pizza } from "../services/pizza"
@@ -12,10 +12,24 @@
 	let loadingPizzas = true
 	let pizzaList: Pizza[] = []
 
-	onMount(async () => {
-		const res = await getPizzas()
-		pizzaList = res.data.data
+	let loadingDailyToppings = true
+	let dailyToppings: string = ""
+
+	async function fetchPizzas() {
+		const pizzas = await getPizzas()
+		pizzaList = pizzas.data.data
 		loadingPizzas = false
+	}
+
+	async function fetchDailyToppings() {
+		const toppings = await getDailyToppings()
+		dailyToppings = toppings.data.data.toppings
+		loadingDailyToppings = false
+	}
+
+	onMount(() => {
+		fetchPizzas()
+		fetchDailyToppings()
 	})
 </script>
 
@@ -29,7 +43,7 @@
 		<p>Sukella syvälle makunautintojen maailmaan ja valitse oma lempparisi meidän räätälöidyn pizzavalikoiman parista. Yksikään näistä herkuista ei kyllä jätä nälkäiseksi!</p>
 		<p><strong>Miten tilaan?</strong> Valitse alta lempparipizzasi ja ota täytteet ylös. Suunnista kohti lähimpää pizzeriaasi ja tilaa itsellesi jokin näistä herkuista. Et tule varmasti pettymään!</p>
 		<p>Mikäli päädyt maistamaan jotain näistä herkuista, jaa toki kuva twitterissä häshtägillä <span class="bg-blue-600 p-1 rounded-lg">#wokinpizza</span>.</p>
-		<p><strong>Päivän täytteet:</strong> Ei ole</p>
+		<p><strong>Päivän täytteet:</strong> {#if loadingDailyToppings}Loading...{:else}{dailyToppings}{/if}</p>
 	</div>
 
 	<div class="grid grid-cols-3 gap-4 mt-5">
