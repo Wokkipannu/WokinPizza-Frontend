@@ -1,13 +1,13 @@
 <script lang="ts">
   function handleClick() {
-    return window.location.href = "http://localhost/api/auth/login"
+    return window.location.href = "/api/auth/login"
   }
 </script>
 
 <script context="module">
   import axios from 'axios'
   export async function load() {
-    axios.get('http://localhost/api/auth/user')
+    axios.get('/api/auth/user')
     .then(() => {
       return window.location.href = "/dashboard"
     })
