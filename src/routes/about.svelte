@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>Wokin Pizza - Tietoja</title>
 	<meta name="description" content="Sukella syvälle pizzojen makumaailmaan" />
 </svelte:head>
 
