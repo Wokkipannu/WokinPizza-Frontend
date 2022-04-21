@@ -10,6 +10,8 @@
     axios.get('/api/auth/user')
     .then(() => {
       return window.location.href = "/dashboard"
+    }).catch(error => {
+      // Do nothing
     })
 
     return {}

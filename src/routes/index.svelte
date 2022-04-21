@@ -5,8 +5,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { getPizzas, getDailyToppings } from "../services/api"
-	// No idea what this error means so I will just ignore it :)
-	// @ts-ignore
 	import type { Pizza } from "../services/api"
 
 	let loadingPizzas = true

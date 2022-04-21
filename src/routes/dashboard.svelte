@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-  import { SvelteToast, toast } from '@zerodevx/svelte-toast'
+  import { toast } from '@zerodevx/svelte-toast'
 	import { getPizzas, getUser, updatePizza } from "../services/api"
-	// @ts-ignore
 	import type { Pizza, User } from "../services/api"
 
 	let loadingPizzas = true

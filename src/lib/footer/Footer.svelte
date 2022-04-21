@@ -11,7 +11,7 @@
   let quote: Quote = { id: "", text: "", number: 0 }
 
   onMount(async () => {
-    const res = await fetch(import.meta.env.VITE_QUOTE_PATH);
+    const res = await fetch("https://misi.mxrr.dev/api/v1/niilo");
     quote = await res.json();
     loadingQuote = false
   })
@@ -34,11 +34,6 @@
       <li>
         <a class="nav-link px-2 text-muted" href="https://twitter.com/WokinPizza" target="_blank">
           Twitter
-        </a>
-      </li>
-      <li>
-        <a class="nav-link px-2 text-muted" href="/login">
-          Kirjaudu
         </a>
       </li>
     </ul>

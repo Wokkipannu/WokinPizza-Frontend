@@ -27,7 +27,7 @@ export interface User {
 }
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_PATH,
+  baseURL: '/api/',
   headers: {
     'Content-Type': 'application/json'
   }
@@ -39,10 +39,6 @@ export const getPizzas = () => {
 
 export const getDailyToppings = () => {
   return API.get('/dailytoppings')
-}
-
-export const loginPath = () => {
-  return import.meta.env.VITE_API_PATH + '/auth/login'
 }
 
 export const logout = () => {
