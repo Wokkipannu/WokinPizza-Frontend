@@ -1,10 +1,13 @@
 <script lang="ts">
+	import { SvelteToast } from '@zerodevx/svelte-toast'
 	import Header from '$lib/header/Header.svelte';
 	import Footer from '$lib/footer/Footer.svelte';
 	import '../app.css';
 </script>
 
 <Header />
+
+<SvelteToast />
 
 <main>
 	<slot />
