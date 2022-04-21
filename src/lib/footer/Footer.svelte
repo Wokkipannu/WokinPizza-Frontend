@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  
+
   interface Quote {
     id: string,
     text: string,
@@ -23,17 +23,22 @@
     <ul class="flex flex-row justify-center pb-3 items-center">
       <li>
         <a class="nav-link px-2 text-muted" sveltekit:prefetch href="/">
-          <i class="bi bi-house-door-fill"></i> Etusivu
+          Etusivu
         </a>
       </li>
       <li>
         <a class="nav-link px-2 text-muted" sveltekit:prefetch href="/about">
-          <i class="bi bi-info-circle-fill"></i> Tietoja
+          Tietoja
         </a>
       </li>
       <li>
         <a class="nav-link px-2 text-muted" href="https://twitter.com/WokinPizza" target="_blank">
-          <i class="bi bi-twitter"></i> Twitter
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a class="nav-link px-2 text-muted" href="/login">
+          Kirjaudu
         </a>
       </li>
     </ul>
