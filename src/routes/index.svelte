@@ -4,10 +4,10 @@
 
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { getPizzas, getDailyToppings } from "../services/pizza"
+	import { getPizzas, getDailyToppings } from "../services/api"
 	// No idea what this error means so I will just ignore it :)
 	// @ts-ignore
-	import type { Pizza } from "../services/pizza"
+	import type { Pizza } from "../services/api"
 
 	let loadingPizzas = true
 	let pizzaList: Pizza[] = []
@@ -34,7 +34,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Wokin Pizza - Etusivu</title>
 	<meta name="description" content="Sukella syvälle pizzojen makumaailmaan" />
 </svelte:head>
 
