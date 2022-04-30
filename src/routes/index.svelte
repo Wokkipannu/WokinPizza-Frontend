@@ -44,7 +44,7 @@
 		<p><strong>Päivän täytteet:</strong> {#if loadingDailyToppings}Loading...{:else}{dailyToppings}{/if}</p>
 	</div>
 
-	<div class="grid grid-cols-3 gap-4 mt-5">
+	<div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mt-5">
 		{#each pizzaList as pizza}
 			<div class="rounded-md border-[1px] border-black place-self-start w-full">
 				<img src={pizza.thumbnail} class="w-full rounded-t-md" alt={pizza.name} />
