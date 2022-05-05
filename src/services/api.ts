@@ -23,7 +23,14 @@ export interface User {
     token_type: string,
     expiry: string
   }
-  username: string,
+  username: string
+}
+
+export interface Topping {
+  id: string,
+  created_at: string,
+  updated_at: string,
+  topping: string
 }
 
 const API = axios.create({
@@ -70,9 +77,41 @@ export const updatePizza = (data: Pizza) => {
 }
 
 export const createPizza = (data: Pizza) => {
-  API.post('/pizza', { data })
+  return new Promise((resolve, reject) => {
+    API.post('/pizza', data)
+      .then(res => {
+        resolve(res.data.data)
+      })
+      .catch(err => {
+        reject(err)
+      })
+  })
 }
 
 export const deletePizza = (id: string) => {
-  API.delete('/pizza', { data: { id } })
+  return new Promise((resolve, reject) => {
+    API.delete('/pizza', { data: { id } })
+      .then(res => {
+        resolve(res.data.data)
+      })
+      .catch(err => {
+        reject(err)
+      })
+  })
+}
+
+export const getToppings = () => {
+  return API.get('/toppings')
+}
+
+export const updateTopping = (data: Topping) => {
+  return new Promise((resolve, reject) => {
+    API.put('/topping', data)
+      .then(res => {
+        resolve(res.data.data)
+      })
+      .catch(err => {
+        reject(err)
+      })
+  })
 }
