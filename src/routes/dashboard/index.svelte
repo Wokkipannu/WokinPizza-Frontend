@@ -6,9 +6,6 @@
   import Pizzas from "$lib/dashboard/Pizzas.svelte"
   import Toppings from "$lib/dashboard/Toppings.svelte"
 
-  import Modal from '$lib/Modal.svelte'
-  import AddPizzaModal from '$lib/modal/AddPizzaModal.svelte'
-
   let user = {} as User
   async function getUserData() {
     user = await getUser() as User
