@@ -11,7 +11,7 @@
   let quote: Quote = { id: "", text: "", number: 0 }
 
   onMount(async () => {
-    const res = await fetch("https://misi.mxrr.dev/api/v1/niilo");
+    const res = await fetch("https://misi.karei.dev/api/v1/niilo");
     quote = await res.json();
     loadingQuote = false
   })
