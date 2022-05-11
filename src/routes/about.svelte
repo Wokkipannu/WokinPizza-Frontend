@@ -25,5 +25,5 @@
 	<p class="py-2">Wokin Pizzan frontend on rakennettu SvelteKitillä, backend Go:lla ja tietokantana toimii MongoDB.</p>
 	<p class="py-2">Sivustojen lisäksi toiminnassa on <a href="https://twitter.com/WokinPizza" target="_blank" class="text-sky-400">Wokin Pizzan twitter botti</a>, joka twiittailee teille päivittäin satunnaisesti poimittuja täytteitä. Botti pyörii Go:lla.</p>
 	<p class="py-2">Voit katsoa muita hienoja projektejani sivustoiltani <a href="https://www.wokki.dev/" target="_blank" class="text-sky-400">https://www.wokki.dev/</a>.</p>
-	<p class="py-2">Footerista löytyvät satunnaiset niilo22:n inspiroivat lainaukset haetaan <a href="https://misi.mxrr.dev/niilo" target="_blank" class="text-sky-400">https://misi.mxrr.dev/niilo</a> APIsta.</p>
+	<p class="py-2">Footerista löytyvät satunnaiset niilo22:n inspiroivat lainaukset haetaan <a href="https://misi.karei.dev/niilo" target="_blank" class="text-sky-400">https://misi.karei.dev/niilo</a> APIsta.</p>
 </div>
