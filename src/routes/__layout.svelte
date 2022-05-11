@@ -9,7 +9,7 @@
 
 <SvelteToast />
 
-<main>
+<main class="md:px-0 px-5">
 	<slot />
 </main>
 

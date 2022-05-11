@@ -8,7 +8,7 @@
 	<meta name="description" content="Sukella syvälle pizzojen makumaailmaan" />
 </svelte:head>
 
-<div class="container mx-auto my-5">
+<div class="container mx-auto my-5 sm:text-left text-center">
 	<div class="space-y-3">
 		<p>Sukella syvälle makunautintojen maailmaan ja valitse oma lempparisi meidän räätälöidyn pizzavalikoiman parista. Yksikään näistä herkuista ei kyllä jätä nälkäiseksi!</p>
 		<p><strong>Miten tilaan?</strong> Valitse alta lempparipizzasi ja ota täytteet ylös. Suunnista kohti lähimpää pizzeriaasi ja tilaa itsellesi jokin näistä herkuista. Et tule varmasti pettymään!</p>

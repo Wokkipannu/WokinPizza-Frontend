@@ -3,7 +3,7 @@
 </script>
 
 
-<div class="container mx-auto my-5">
+<div class="container mx-auto my-5 md:px-0 px-5">
 	<a sveltekit:prefetch href="/">
 		<img src={logo} alt="Wokin Pizza" class="mx-auto" width="500" height="100">
 	</a>

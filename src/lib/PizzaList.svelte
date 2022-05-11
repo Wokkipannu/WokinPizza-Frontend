@@ -19,7 +19,7 @@
 
 <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 my-5">
   {#each pizzaList as pizza}
-    <div class="rounded-md border-[1px] place-self-start w-full bg-neutral-900 border-neutral-800 shadow-lg shadow-black hover:shadow-xl hover:shadow-black transition-shadow duration-500">
+    <div class="rounded-md border-[1px] place-self-start w-full bg-neutral-900 border-b-slate-800 border-b-2 border-neutral-800 shadow-lg shadow-black hover:border-b-emerald-700 hover:shadow-xl hover:shadow-black transition-all duration-500">
       <img src={pizza.thumbnail} class="w-full rounded-t-md" alt={pizza.name} />
       <div class="space-y-1 space-x-2 p-2">
         <h5 class="text-xl pt-2 px-2">{pizza.name}</h5>
