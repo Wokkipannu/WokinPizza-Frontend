@@ -17,15 +17,15 @@
 	})
 </script>
 
-<div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mt-5">
+<div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 my-5">
   {#each pizzaList as pizza}
-    <div class="rounded-md border-[1px] border-black place-self-start w-full">
+    <div class="rounded-md border-[1px] place-self-start w-full bg-neutral-900 border-neutral-800 shadow-lg shadow-black hover:shadow-xl hover:shadow-black transition-shadow duration-500">
       <img src={pizza.thumbnail} class="w-full rounded-t-md" alt={pizza.name} />
-      <div class="space-y-1 space-x-2">
+      <div class="space-y-1 space-x-2 p-2">
         <h5 class="text-xl pt-2 px-2">{pizza.name}</h5>
         <p class="pb-2">{pizza.description}</p>
       </div>
-      <ul class="border-t-[1px] border-black">
+      <ul class="border-t-[1px] border-neutral-800 p-2">
         <li class="py-3 px-3">{pizza.toppings}</li>
       </ul>
     </div>
