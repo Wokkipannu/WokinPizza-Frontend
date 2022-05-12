@@ -31,12 +31,12 @@
 	<meta name="description" content={`Wokin Pizza - ${pizza.name}`} />
   <meta property="og:title" content={`Wokin Pizza - ${pizza.name}`} />
   <meta property="og:description" content={pizza.description} />
-  <meta property="og:image" content={pizza.thumbnail} />
+  <meta property="og:image" content={pizza.image} />
   <meta property="og:url" content={`https://pizza.wokki.dev/pizza/${pizza.id}`} />
   <meta property="og:type" content="article" />
   <meta property="twitter:title" content={`Wokin Pizza - ${pizza.name}`} />
   <meta property="twitter:description" content={pizza.description} />
-  <meta property="twitter:image" content={pizza.thumbnail} />
+  <meta property="twitter:image" content={pizza.image} />
 </svelte:head>
 
 <div class="container mx-auto my-5">
