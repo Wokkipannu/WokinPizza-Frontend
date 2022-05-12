@@ -7,7 +7,7 @@
 <script context="module">
   /** @ts-ignore */
   export async function load({ params }) {
-    const url = `http://localhost/api/pizza/${params.id}`
+    const url = `https://pizza.wokki.dev/api/pizza/${params.id}`
     const response = await fetch(url)
 
     if (response.status !== 200) {
