@@ -5,12 +5,9 @@
 	import '../app.css';
 </script>
 
-<Header />
-
 <SvelteToast />
-
+<Header />
 <main class="md:px-0 px-5">
 	<slot />
 </main>
-
 <Footer />

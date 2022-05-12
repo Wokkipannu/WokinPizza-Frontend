@@ -44,6 +44,18 @@ export const getPizzas = () => {
   return API.get('/pizza')
 }
 
+export const getPizza = (id: string) => {
+  return new Promise((resolve, reject) => {
+    API.get(`/pizza/${id}`)
+      .then(res => {
+        resolve(res.data.data)
+      })
+      .catch(err => {
+        reject(err)
+      })
+  })
+}
+
 export const getDailyToppings = () => {
   return API.get('/dailytoppings')
 }
